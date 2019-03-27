@@ -1,0 +1,64 @@
+{
+  "summary": "Advanced Export For Developers",
+  "website": "http://savedata.xyz",
+  "keywords": [
+    "export assets","xd assets colors to android studio"
+  ],
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "es",
+    "pt"
+  ],
+  "author": "hossein sedighian",
+  "description": "this plugin provide code from xd for developers",
+  "helpUrl": "https://github.com/savedata-space/xd-export-for-developers",
+  "main": "main.js",
+  "icons": [
+    {
+      "path": "images/pluginIcon1.png",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "path": "images/pluginIcon2.png",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "images/pluginIcon3.png",
+      "width": 144,
+      "height": 144
+    },
+    {
+      "path": "images/pluginIcon4.png",
+      "width": 192,
+      "height": 192
+    }
+  ],
+  "version": "1.0.0",
+  "releaseNotes": "generate colors for android",
+  "name": "Advanced Export",
+  "host": {
+    "app": "XD",
+    "minVersion": "13.0"
+  },
+  "id": "4a7278bb",
+  "uiEntryPoints": [
+    {
+      "type": "menu",
+      "label": "Advanced Export",
+      "menuItems": [
+        {
+          "type": "menu",
+          "label": "Assets Colors to Android values",
+          "commandId": "CopyForAndroidValue" 
+        } 
+       ]
+    }
+  ]
+}
