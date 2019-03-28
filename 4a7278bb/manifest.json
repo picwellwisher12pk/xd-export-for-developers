@@ -40,7 +40,7 @@
       "height": 192
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "releaseNotes": "generate colors for android",
   "name": "Advanced Export",
   "host": {

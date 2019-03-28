@@ -197,8 +197,11 @@ async function createDialog({
         }
     </div>
     <footer>
-        ${buttons.map(({label, type, variant} = {}, idx) => `<button id="btn${idx}" type="${type}" uxp-variant="${variant}">${label}</button>`).join('')}
+    ${buttons.map(({label, type, variant} = {}, idx) => `<button id="btn${idx}" type="${type}" uxp-variant="${variant}">${label}</button>`).join('')}
     </footer>
+    <div>
+    <a style="margin:10px;color:silver" href="https://github.com/savedata-space/xd-export-for-developers">need help ?</a>
+    </div>
 </form>
     `;
 
@@ -260,7 +263,7 @@ async function createDialog({
  * @param {string[]} msgs
  * @returns {Promise<{which: number}>} `which` indicates which button was clicked.
  */
-async function alert(title, ...msgs) {
+async function ShowAlert(title, ...msgs) {
     return createDialog({title, msgs});
 }
 
@@ -324,7 +327,7 @@ async function prompt(title, msg, prompt, buttons = [ 'Cancel', 'OK' ], multilin
 
 module.exports = {
     createDialog,
-    alert,
+    ShowAlert,
     error,
     confirm,
     warning,
